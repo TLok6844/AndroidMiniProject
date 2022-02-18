@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:id="@+id/drawer"
+    tools:context=".signInActivity">
+
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/menu_register"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="397dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/arizonia"
+        android:text="Disneyland"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bannerdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="castle information"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bannerdescription" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullName" />
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age" />
+
+    <EditText
+        android:id="@+id/RegPassword"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegEmail" />
+
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#2980B9"
+        android:text="Register USer"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegPassword" />
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav_meun"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="397dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/arizonia"
+        android:text="Disneyland"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bannerdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:text="castle information"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#2980B9"
+        android:text="Compulsory Part"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerdescription"
+        app:layout_constraintVertical_bias="0.67" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#2980B9"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfile"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#2980B9"
+        android:text="Register"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.12" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

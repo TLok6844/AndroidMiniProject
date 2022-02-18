@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ea">
+
+    <application
+        android:label=""
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EA">
+        <activity android:name=".UserdataActivity"></activity>
+        <activity android:name=".imageActivity" />
+        <activity android:name=".InsideActivity" />
+        <activity
+            android:name=".DisplayActivity"
+            android:parentActivityName=".ProfileActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FogotPassward" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".signInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

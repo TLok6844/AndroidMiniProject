@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/MeunHome"/>
+    <item android:title="Contect"
+        android:id="@+id/MeunContect"/>
+    <item android:title="Map"
+        android:id="@+id/MeunMap"/>
+
+    <item android:title="logout"
+        android:id="@+id/MenuItem"/>
+
+
+
+</menu>

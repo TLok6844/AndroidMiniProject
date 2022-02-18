@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "35128747519",
+    "project_id": "eahomework-e4857",
+    "storage_bucket": "eahomework-e4857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35128747519:android:341f658b2698ad6126b3ca",
+        "android_client_info": {
+          "package_name": "com.example.ea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35128747519-cmh99rsd9k5amlih2mh6jrq18hg0dbki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qivNy9TOH462Aawkr13BijaVFLda4Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35128747519-cmh99rsd9k5amlih2mh6jrq18hg0dbki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35128747519:android:ffc6872bf02c29ef26b3ca",
+        "android_client_info": {
+          "package_name": "com.example.eaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35128747519-cmh99rsd9k5amlih2mh6jrq18hg0dbki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5qivNy9TOH462Aawkr13BijaVFLda4Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35128747519-cmh99rsd9k5amlih2mh6jrq18hg0dbki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

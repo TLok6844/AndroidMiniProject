@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Exit"
+        android:id="@+id/Menu_Signi_Exit"/>
+    <item android:title="Reggister"
+        android:id="@+id/Menu_Signi_Register"/>
+    <item android:title="Forgot Passward"
+        android:id="@+id/Menu_Signi_Fogot"/>
+
+
+
+</menu>

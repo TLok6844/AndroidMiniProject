@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".imageActivity"
+    android:orientation="vertical">
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_main"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:menu="@menu/nav_meun"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/arizonia"
+        android:text="Disneyland"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:typeface="sans"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="#AEFFFFFF"
+        app:srcCompat="@drawable/image2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="385dp"
+        android:background="#97FFFFFF"
+        app:srcCompat="@drawable/image3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="441dp" />
+</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
